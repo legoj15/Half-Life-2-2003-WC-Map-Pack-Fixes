@@ -246,6 +246,7 @@ function UpdateModels(pChunk)
 	-- legoj15
 	ReplaceModel( pChunk, "models/Pipes/W_Pipe_1b_curve_halfsize.mdl", "models/props_c17/pipe02_90degree01.mdl" ) -- Close probably
 	ReplaceModel( pChunk, "models/Pipes/W_Pipe_1a_curve.mdl", "models/props_c17/pipe03_90degree01.mdl" ) -- Close probably
+	ReplaceModel( pChunk, "models/Lighting/W_LightBareOn.mdl", "models/props_c17/light_lightbare01_on.mdl" ) -- Close probably
 end
 
 function UpdateSky(pChunk)
@@ -482,7 +483,7 @@ function UpdateTextures(pChunk)
 	ReplaceTexture( pChunk, "PROPS/BILLBOARD002B", "PROPS/SIGNBILLBOARD005A" )
 	
 	--Stone
-	ReplaceTexture( pChunk, "STONE/DIRTROAD001A", "STONE/STONEFLOOR007A" )
+--	ReplaceTexture( pChunk, "STONE/DIRTROAD001A", "STONE/STONEFLOOR007A" )
 	ReplaceTexture( pChunk, "STONE/STONECORNICE001A", "STONE/STONEWALL013A" ) -- Unknown texture
 
 	--Tile
