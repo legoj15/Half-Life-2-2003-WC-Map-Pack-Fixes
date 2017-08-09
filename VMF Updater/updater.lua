@@ -247,6 +247,7 @@ function UpdateModels(pChunk)
 	ReplaceModel( pChunk, "models/Pipes/W_Pipe_1b_curve_halfsize.mdl", "models/props_c17/pipe02_90degree01.mdl" ) -- Close probably
 	ReplaceModel( pChunk, "models/Pipes/W_Pipe_1a_curve.mdl", "models/props_c17/pipe03_90degree01.mdl" ) -- Close probably
 	ReplaceModel( pChunk, "models/Lighting/W_LightBareOn.mdl", "models/props_c17/light_lightbare01_on.mdl" ) -- Close probably
+	ReplaceModel( pChunk, "models/Lighting/W_CageLightOn02.mdl", "models/props_c17/light_cagelight02_on.mdl" ) -- Close probably
 end
 
 function UpdateSky(pChunk)
@@ -323,6 +324,7 @@ function UpdateTextures(pChunk)
 	ReplaceTexture( pChunk, "BUILDINGS_SM/BRICKWALL012C_SM", "BRICK/BRICKWALL011C" )
 	ReplaceTexture( pChunk, "BUILDINGS_SM/METALWALL006A_SM", "METAL/METALWALL006A" )
 	ReplaceTexture( pChunk, "BUILDINGS_SM/METALWALL020A_SM", "METAL/METALWALL020A" )
+	ReplaceTexture( pChunk, "BUILDINGS_SM/METALTRUSS008A_SM", "METAL/metaltruss008a" )
 	
 	--Concrete
 	ReplaceTexture( pChunk, "CONCRETE/CONCRETEFLOOR001B", "DECALS/DECAL_CRATER001A" )
