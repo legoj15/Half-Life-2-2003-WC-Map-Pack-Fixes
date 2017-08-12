@@ -248,6 +248,7 @@ function UpdateModels(pChunk)
 	ReplaceModel( pChunk, "models/Pipes/W_Pipe_1a_curve.mdl", "models/props_c17/pipe03_90degree01.mdl" ) -- Close probably
 	ReplaceModel( pChunk, "models/Lighting/W_LightBareOn.mdl", "models/props_c17/light_lightbare01_on.mdl" ) -- Close probably
 	ReplaceModel( pChunk, "models/Lighting/W_CageLightOn02.mdl", "models/props_c17/light_cagelight02_on.mdl" ) -- Close probably
+--	ReplaceModel( pChunk, "models/props_c17/handrail01a_level03.mdl", "models/props_c17/handrail01a_level03.mdl" ) -- Couldn't find replacement
 end
 
 function UpdateSky(pChunk)
