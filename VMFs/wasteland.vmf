@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6412"
-	"mapversion" "314"
+	"mapversion" "316"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -38,26 +38,26 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "64"
+	"nGridSpacing" "32"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "0"
-	"mapversion" "314"
+	"mapversion" "316"
 	"classname" "worldspawn"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
 	"fogcolor" "215 225 221"
 	"fogcolor2" "255 255 255"
 	"fogdir" "1 0 0"
 	"fogenable" "0"
 	"fogend" "4000.0"
 	"fogstart" "0"
+	"maxpropscreenwidth" "-1"
 	"MaxRange" "999999"
 	"skyname" "sky_wasteland02"
 	"sounds" "1"
-	"maxpropscreenwidth" "-1"
-	"detailvbsp" "detail.vbsp"
-	"detailmaterial" "detail/detailsprites"
 	solid
 	{
 		"id" "995"
@@ -22089,48 +22089,7 @@ world
 	}
 	group
 	{
-		"id" "5455"
-		editor
-		{
-			"color" "167 164 213"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	group
-	{
-		"id" "5467"
-		editor
-		{
-			"color" "167 164 213"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	group
-	{
 		"id" "5781"
-		editor
-		{
-			"color" "167 164 213"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	group
-	{
-		"id" "5454"
-		editor
-		{
-			"color" "167 164 213"
-			"groupid" "5781"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	group
-	{
-		"id" "5894"
 		editor
 		{
 			"color" "167 164 213"
@@ -22144,16 +22103,6 @@ world
 		editor
 		{
 			"color" "167 164 213"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	group
-	{
-		"id" "81851"
-		editor
-		{
-			"color" "217 158 135"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -22215,46 +22164,6 @@ world
 		{
 			"color" "217 158 135"
 			"groupid" "94600"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	group
-	{
-		"id" "96513"
-		editor
-		{
-			"color" "224 145 118"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	group
-	{
-		"id" "96886"
-		editor
-		{
-			"color" "224 145 118"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	group
-	{
-		"id" "98953"
-		editor
-		{
-			"color" "217 158 135"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	group
-	{
-		"id" "101880"
-		editor
-		{
-			"color" "217 158 135"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -47220,9 +47129,10 @@ entity
 entity
 {
 	"id" "123889"
-	"classname" "prop_vehicle_apc"
+	"classname" "prop_vehicle_jeep"
 	"actionScale" "1"
 	"angles" "0 180 0"
+	"CargoVisible" "0"
 	"disableshadows" "0"
 	"fademaxdist" "0"
 	"fademindist" "-1"
@@ -48682,20 +48592,12 @@ entity
 entity
 {
 	"id" "130650"
-	"classname" "prop_physics"
-	"angles" "0 0 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"inertiaScale" "1.0"
-	"modelscale" "1.0"
-	"physdamagescale" "0.1"
-	"renderamt" "255"
-	"rendercolor" "255 255 255"
-	"spawnflags" "256"
-	"origin" "658.198 6010.75 -23"
+	"classname" "env_cubemap"
+	"cubemapsize" "9"
+	"origin" "0 0 32"
 	editor
 	{
-		"color" "220 30 220"
+		"color" "0 0 255"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[5000 11500]"
@@ -53266,8 +53168,8 @@ cameras
 	}
 	camera
 	{
-		"position" "[1057.27 4922.86 167.711]"
-		"look" "[1024.74 6085.05 136.578]"
+		"position" "[2399.51 5441.91 208.088]"
+		"look" "[1461.9 4874.13 -180.801]"
 	}
 }
 cordon
