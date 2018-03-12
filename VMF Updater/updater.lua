@@ -255,6 +255,7 @@ function UpdateModels(pChunk)
 	ReplaceModel( pChunk, "models/Barrels/W_Barrel10.mdl", "models/props_c17/barrel10a.mdl" )
 	ReplaceModel( pChunk, "models/Barrels/W_Barrel11.mdl", "models/props_c17/barrel11a.mdl" )
 	ReplaceModel( pChunk, "models/Barrels/W_Barrel12.mdl", "models/props_c17/barrel12a.mdl" )
+	ReplaceModel( pChunk, "models/C17_citizen_minimal.mdl", "models/Humans/Male_Cheaple.mdl" ) -- This is probably 200% wrong
 end
 
 function UpdateSky(pChunk)
