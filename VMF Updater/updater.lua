@@ -237,7 +237,6 @@ function UpdateModels(pChunk)
 	ReplaceModel( pChunk, "models/Building_details/W_RebarMedThin02a.mdl", "models/props_debris/Rebar_MedThin02a.mdl" )
 	ReplaceModel( pChunk, "models/Building_details/W_RebarMedThin02c.mdl", "models/props_debris/Rebar_MedThin02c.mdl" )
 	ReplaceModel( pChunk, "models/Lighting/W_TrafficLight.mdl", "models/props_c17/Traffic_Light001a.mdl" )
-	ReplaceModel( pChunk, "models/Barrels/W_Barrel2.mdl", "models/props_c17/barrel02a.mdl" )
 	ReplaceModel( pChunk, "models/Building_details/W_ValveWheel01.mdl", "models/props_borealis/valvewheel002b.mdl" ) -- Not original
 	ReplaceModel( pChunk, "models/Sentry01/Sentry01Gun.mdl", "models/Sentry_Guns/Sentry01Gun.mdl" )
 	ReplaceModel( pChunk, "models/Sentry01/Sentry01Post.mdl", "models/Sentry_Guns/Sentry01Post.mdl" )
@@ -249,6 +248,13 @@ function UpdateModels(pChunk)
 	ReplaceModel( pChunk, "models/Lighting/W_LightBareOn.mdl", "models/props_c17/light_lightbare01_on.mdl" ) -- Close probably
 	ReplaceModel( pChunk, "models/Lighting/W_CageLightOn02.mdl", "models/props_c17/light_cagelight02_on.mdl" ) -- Close probably
 --	ReplaceModel( pChunk, "models/props_c17/handrail01a_level03.mdl", "models/props_c17/handrail01a_level03.mdl" ) -- Couldn't find replacement
+	ReplaceModel( pChunk, "models/Barrels/W_Barrel6.mdl", "models/props_c17/barrel06a.mdl" )
+	ReplaceModel( pChunk, "models/Barrels/W_Barrel7.mdl", "models/props_c17/barrel07a.mdl" )
+	ReplaceModel( pChunk, "models/Barrels/W_Barrel8.mdl", "models/props_c17/barrel08a.mdl" )
+	ReplaceModel( pChunk, "models/Barrels/W_Barrel9.mdl", "models/props_c17/barrel09a.mdl" )
+	ReplaceModel( pChunk, "models/Barrels/W_Barrel10.mdl", "models/props_c17/barrel10a.mdl" )
+	ReplaceModel( pChunk, "models/Barrels/W_Barrel11.mdl", "models/props_c17/barrel11a.mdl" )
+	ReplaceModel( pChunk, "models/Barrels/W_Barrel12.mdl", "models/props_c17/barrel12a.mdl" )
 end
 
 function UpdateSky(pChunk)
