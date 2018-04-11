@@ -1,25 +1,33 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "7589"
-	"mapversion" "400"
+	"editorbuild" "6412"
+	"mapversion" "401"
+	"formatversion" "100"
 	"prefab" "0"
+}
+visgroups
+{
 }
 viewsettings
 {
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
 	"nGridSpacing" "64"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "0"
-	"mapversion" "400"
+	"mapversion" "401"
 	"classname" "worldspawn"
+	"MaxRange" "4096"
 	"skyname" "wastelands001"
 	"sounds" "1"
-	"MaxRange" "4096"
+	"maxpropscreenwidth" "-1"
+	"detailvbsp" "detail.vbsp"
+	"detailmaterial" "detail/detailsprites"
 	solid
 	{
 		"id" "3"
@@ -92,6 +100,8 @@ world
 		editor
 		{
 			"color" "0 122 195"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
 		}
 	}
 	solid
@@ -166,6 +176,8 @@ world
 		editor
 		{
 			"color" "0 122 195"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
 		}
 	}
 	solid
@@ -251,6 +263,8 @@ world
 		editor
 		{
 			"color" "0 178 219"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
 		}
 	}
 	solid
@@ -336,6 +350,8 @@ world
 		editor
 		{
 			"color" "0 92 205"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
 		}
 	}
 	solid
@@ -421,7 +437,23 @@ world
 		editor
 		{
 			"color" "0 126 151"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
 		}
+	}
+}
+entity
+{
+	"id" "8"
+	"classname" "info_player_start"
+	"angles" "0 0 0"
+	"origin" "-3667.26 -269.876 -4.20153"
+	editor
+	{
+		"color" "0 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 cameras
