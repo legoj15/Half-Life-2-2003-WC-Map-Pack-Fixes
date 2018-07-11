@@ -148,106 +148,64 @@ function FixedLogicEntity(pChunk)
 	
 	end	
 
+	-- VXP
+	if entitytype == "env_sound" then
+		-- VXP: DSP effects for env_soundscape
+		local env_sound = {
+			["0"] = "Normal (off)",
+			["1"] = "Generic",
+			["2"] = "Metal Small",
+			["3"] = "Metal Medium",
+			["4"] = "Metal Large",
+			["5"] = "Tunnel Small",
+			["6"] = "Tunnel Medium",
+			["7"] = "Tunnel Large",
+			["8"] = "Chamber Small",
+			["9"] = "Chamber Medium",
+			["10"] = "Chamber Large",
+			["11"] = "Bright Small",
+			["12"] = "Bright Medium",
+			["13"] = "Bright Large",
+			["14"] = "Water 1",
+			["15"] = "Water 2",
+			["16"] = "Water 3",
+			["17"] = "Concrete Small",
+			["18"] = "Concrete Medium",
+			["19"] = "Concrete Large",
+			["20"] = "Big 1",
+			["21"] = "Big 2",
+			["22"] = "Big 3",
+			["23"] = "Cavern Small",
+			["24"] = "Cavern Medium",
+			["25"] = "Cavern Large",
+			["26"] = "Weirdo 1",
+			["27"] = "Weirdo 2",
+			["28"] = "Weirdo 3",
+		}
 
+		RenameEntity( pChunk, "env_sound", "env_soundscape" )
+		RenameKey( pChunk, "roomtype", "soundscape" )
+
+		local oldEnvSoundIndex = GetValueFromKey( pChunk, "soundscape" )
+		local newSoundscape = env_sound[oldEnvSoundIndex]
+
+		if newSoundscape ~= nil then
+			ReplaceObjekt( pChunk, oldEnvSoundIndex, newSoundscape, "soundscape" )
+		else
+			ReplaceObjekt( pChunk, oldEnvSoundIndex, env_sound["0"], "soundscape" ) -- VXP: Just use "Normal (off)" soundscape
+		end
+	end
+	
 end
 
-function UpdateModels(pChunk)
+function UpdateModels(pChunk) --Credits for the list: Bun, CrazzyBubba and Витой
 
-	ReplaceModel( pChunk, "models/Citizen.mdl", "models/c17_male1.mdl" )
-
-	ReplaceModel( pChunk, "models/lighting/W_LightBare.mdl", "models/props_c17/light_lightbare01_on.mdl" )
 
 	ReplaceModel( pChunk, "models/Barrels/W_Barrel1.mdl", "models/props_c17/barrel01a.mdl" )
 	ReplaceModel( pChunk, "models/Barrels/W_Barrel2.mdl", "models/props_c17/barrel02a.mdl" )
-	ReplaceModel( pChunk, "models/Barrels/W_Barrel3.mdl", "models/props_c17/barrel04a.mdl" )
+	ReplaceModel( pChunk, "models/Barrels/W_Barrel3.mdl", "models/props_c17/barrel03a.mdl" )
 	ReplaceModel( pChunk, "models/Barrels/W_Barrel4.mdl", "models/props_c17/barrel04a.mdl" )
 	ReplaceModel( pChunk, "models/Barrels/W_Barrel5.mdl", "models/props_c17/barrel05a.mdl" )
-
-	ReplaceModel( pChunk, "models/Lighting/W_StreetLightOn01.mdl", "models/props_c17/light_streetlight02_on.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_StreetLightOff01.mdl", "models/props_c17/light_streetlight01_off.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_StreetLightOn02.mdl", "models/props_c17/light_streetlight02_on.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_StreetLightOff02.mdl", "models/props_c17/light_streetlight02_off.mdl" )
-
-	ReplaceModel( pChunk, "models/Lighting/W_LightCage.mdl", "models/props_c17/light_lightcage01_on.mdl" )
-	
-	ReplaceModel( pChunk, "models/Lighting/W_StreetLampOn01.mdl", "models/props_c17/light_industrialbell01_on.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_StreetLampOff01.mdl", "models/props_c17/light_industrialbell01_off.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_StreetLampOn02.mdl", "models/props_c17/light_industrialbell02_on.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_StreetLampOff02.mdl", "models/props_c17/light_industrialbell02_off.mdl" )
-	
-	ReplaceModel( pChunk, "models/Lighting/W_DomeLightOn01.mdl", "models/props_c17/light_domelight01_on.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_DomeLightOff01.mdl", "models/props_c17/light_domelight01_off.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_DomeLightOn02.mdl", "models/props_c17/light_domelight01_on.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_DomeLightOff02.mdl", "models/props_c17/light_domelight02_off.mdl" )
-	
-	ReplaceModel( pChunk, "models/Furniture/W_Mailbox.mdl", "" )
-
-	-- VXP: BuTou's list
-	ReplaceModel( pChunk, "models/Lighting/W_DeckLightOn01.mdl", "models/props_c17/light_decklight01_on.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_DeckLightOff01.mdl", "models/props_c17/light_decklight01_off.mdl" )
---	ReplaceModel( pChunk, "models/Lighting/W_DomeLightOn01.mdl", "models/props_c17/light_domelight01_on.mdl" )
---	ReplaceModel( pChunk, "models/Lighting/W_DomeLightOff01.mdl", "models/props_c17/light_domelight01_off.mdl" )
---	ReplaceModel( pChunk, "models/Lighting/W_DomeLightOn02.mdl", "models/props_c17/light_domelight01_on.mdl" )
---	ReplaceModel( pChunk, "models/Lighting/W_DomeLightOff02.mdl", "models/props_c17/light_domelight02_off.mdl" )
---	ReplaceModel( pChunk, "models/Lighting/W_LightBare.mdl", "models/props_c17/light_lightbare01_on.mdl" )
---	ReplaceModel( pChunk, "models/Lighting/W_LightCage.mdl", "models/props_c17/light_lightcage01_on.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_LightShade2On.mdl", "models/props_wasteland/W_LightShade2On.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_LightShade2Off.mdl", "models/props_wasteland/W_LightShade2Off.mdl" )
-	ReplaceModel( pChunk, "models/props_c17/apc_engine01.mdl", "models/props_c17/TrapPropeller_Engine.mdl" )
-	ReplaceModel( pChunk, "models/props_c17/streetlight01a_on.mdl", "models/props_c17/light01a_on.mdl" )
-
-	-- VXP: BuTou's list 2
-	ReplaceModel( pChunk, "models/Building_details/W_RebarSmallNorm01a.mdl", "models/props_debris/Rebar_SmallNorm01a.mdl" )
-	ReplaceModel( pChunk, "models/Building_details/W_RebarSmallNorm01b.mdl", "models/props_debris/Rebar_SmallNorm01b.mdl" )
-	ReplaceModel( pChunk, "models/Building_details/W_RebarSmallNorm01c.mdl", "models/props_debris/Rebar_SmallNorm01c.mdl" )
-	ReplaceModel( pChunk, "models/Building_details/W_RebarMedNorm01a.mdl", "models/props_debris/Rebar_MedNorm01a.mdl" )
-	ReplaceModel( pChunk, "models/Building_details/W_RebarMedNorm01b.mdl", "models/props_debris/Rebar_MedNorm01b.mdl" )
-	ReplaceModel( pChunk, "models/Building_details/W_RebarMedNorm01c.mdl", "models/props_debris/Rebar_MedNorm01c.mdl" )
-	ReplaceModel( pChunk, "models/Building_details/W_RebarMedNorm02a.mdl", "models/props_debris/Rebar_MedNorm02a.mdl" )
-	ReplaceModel( pChunk, "models/Building_details/W_RebarMedNorm02b.mdl", "models/props_debris/Rebar_MedNorm02b.mdl" )
-	ReplaceModel( pChunk, "models/Building_details/W_RebarMedNorm02c.mdl", "models/props_debris/Rebar_MedNorm02c.mdl" )
-	ReplaceModel( pChunk, "models/Building_details/W_RebarLargeThick01a.mdl", "models/props_debris/Rebar_LargeThick01a.mdl" )
-	ReplaceModel( pChunk, "models/Furniture/W_Clock.mdl", "models/props_c17/clock01.mdl" )
-	ReplaceModel( pChunk, "models/Furniture/W_GarbCan.mdl", "models/props_c17/garbagecan01.mdl" )
-	ReplaceModel( pChunk, "models/Ship/W_MapTube.mdl", "models/props_borealis/maptube01.mdl" )
-	ReplaceModel( pChunk, "models/Electronics/W_Speaker01.mdl", "models/props_c17/trainspeaker01.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_IndustrialBell01On.mdl", "models/props_c17/light_industrialbell01_on.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_IndustrialBell01Off.mdl", "models/props_c17/light_industrialbell01_off.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_IndustrialBell02On.mdl", "models/props_c17/light_industrialbell02_on.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_IndustrialBell02Off.mdl", "models/props_c17/light_industrialbell02_off.mdl" )
-
-	-- VXP: BuTou's list 3
-	ReplaceModel( pChunk, "models/Lighting/W_CageLightOn01.mdl", "models/props_c17/light_cagelight01_on.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_FluorescentOn01.mdl", "models/props_c17/light_fluorescent01_on.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_FluorescentOff01.mdl", "models/props_c17/light_fluorescent01_off.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_GlobeLightOn01.mdl", "models/props_c17/light_globelight01_on.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_GlobeLightOff01.mdl", "models/props_c17/light_globelight01_off.mdl" )
---	ReplaceModel( pChunk, "models/Building_details/W_Antenna01.mdl", "models/props_borealis/antenna001.mdl" ) -- Not original
-	ReplaceModel( pChunk, "models/Furniture/W_Chair.mdl", "models/props_c17/chair02a.mdl" )
-
-	-- VXP: BuTou's list 4
-	ReplaceModel( pChunk, "models/Building_details/W_RebarMedThin02b.mdl", "models/props_debris/Rebar_MedThin02b.mdl" ) -- Not original
-	ReplaceModel( pChunk, "models/Pipes/W_Pipe_1b_curve_halfsize.mdl", "models/props_c17/pipe02_90degree01.mdl" ) -- Not original
-	ReplaceModel( pChunk, "models/Pipes/W_Pipe_1c_curve_quartersize.mdl", "models/props_c17/pipe01_90degree01.mdl" ) -- Not original
-	ReplaceModel( pChunk, "models/Pipes/W_Pipe_2a_45curve.mdl", "models/props_c17/pipe03_45degree01.mdl" ) -- Not original
-	ReplaceModel( pChunk, "models/Pipes/W_Pipe_2b_45curve_halfsize.mdl", "models/props_c17/pipe02_45degree01.mdl" ) -- Not original
-	ReplaceModel( pChunk, "models/Pipes/W_Pipe_4a_Yjoint.mdl", "models/props_c17/pipe03_yjoint01.mdl" ) -- Not original
-	ReplaceModel( pChunk, "models/Pipes/W_Pipe_4b_Yjoint_halfsize.mdl", "models/props_c17/pipe02_yjoint01.mdl" ) -- Not original
-	ReplaceModel( pChunk, "models/c17_props/W_LoudSpeaker01.mdl", "models/props_wasteland/speakercluster01a.mdl" ) -- Not original
-	ReplaceModel( pChunk, "models/Building_details/W_RebarMedThin02a.mdl", "models/props_debris/Rebar_MedThin02a.mdl" )
-	ReplaceModel( pChunk, "models/Building_details/W_RebarMedThin02c.mdl", "models/props_debris/Rebar_MedThin02c.mdl" )
-	ReplaceModel( pChunk, "models/Lighting/W_TrafficLight.mdl", "models/props_c17/Traffic_Light001a.mdl" )
-	ReplaceModel( pChunk, "models/Building_details/W_ValveWheel01.mdl", "models/props_borealis/valvewheel002b.mdl" ) -- Not original
-	ReplaceModel( pChunk, "models/Sentry01/Sentry01Gun.mdl", "models/Sentry_Guns/Sentry01Gun.mdl" )
-	ReplaceModel( pChunk, "models/Sentry01/Sentry01Post.mdl", "models/Sentry_Guns/Sentry01Post.mdl" )
-	ReplaceModel( pChunk, "models/Sentry01/Sentry01Base.mdl", "models/Sentry_Guns/Sentry01Base.mdl" )
-
-	-- legoj15
-	ReplaceModel( pChunk, "models/Pipes/W_Pipe_1b_curve_halfsize.mdl", "models/props_c17/pipe02_90degree01.mdl" ) -- Close probably
-	ReplaceModel( pChunk, "models/Pipes/W_Pipe_1a_curve.mdl", "models/props_c17/pipe03_90degree01.mdl" ) -- Close probably
-	ReplaceModel( pChunk, "models/Lighting/W_LightBareOn.mdl", "models/props_c17/light_lightbare01_on.mdl" ) -- Close probably
-	ReplaceModel( pChunk, "models/Lighting/W_CageLightOn02.mdl", "models/props_c17/light_cagelight02_on.mdl" ) -- Close probably
---	ReplaceModel( pChunk, "models/props_c17/handrail01a_level03.mdl", "models/props_c17/handrail01a_level03.mdl" ) -- Couldn't find replacement
 	ReplaceModel( pChunk, "models/Barrels/W_Barrel6.mdl", "models/props_c17/barrel06a.mdl" )
 	ReplaceModel( pChunk, "models/Barrels/W_Barrel7.mdl", "models/props_c17/barrel07a.mdl" )
 	ReplaceModel( pChunk, "models/Barrels/W_Barrel8.mdl", "models/props_c17/barrel08a.mdl" )
@@ -255,6 +213,111 @@ function UpdateModels(pChunk)
 	ReplaceModel( pChunk, "models/Barrels/W_Barrel10.mdl", "models/props_c17/barrel10a.mdl" )
 	ReplaceModel( pChunk, "models/Barrels/W_Barrel11.mdl", "models/props_c17/barrel11a.mdl" )
 	ReplaceModel( pChunk, "models/Barrels/W_Barrel12.mdl", "models/props_c17/barrel12a.mdl" )
+	
+	ReplaceModel( pChunk, "models/Building_details/W_RebarSmallNorm01a.mdl", "models/props_debris/Rebar_SmallNorm01a.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarSmallNorm01b.mdl", "models/props_debris/Rebar_SmallNorm01b.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarSmallNorm01c.mdl", "models/props_debris/Rebar_SmallNorm01c.mdl" )
+	
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedNorm01a.mdl", "models/props_debris/Rebar_MedNorm01a.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedNorm01b.mdl", "models/props_debris/Rebar_MedNorm01b.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedNorm01c.mdl", "models/props_debris/Rebar_MedNorm01c.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedNorm02a.mdl", "models/props_debris/Rebar_MedNorm02a.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedNorm02b.mdl", "models/props_debris/Rebar_MedNorm02b.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedNorm02c.mdl", "models/props_debris/Rebar_MedNorm02c.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedNorm03a.mdl", "models/props_debris/Rebar_MedNorm03a.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedNorm03b.mdl", "models/props_debris/Rebar_MedNorm03b.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedNorm03c.mdl", "models/props_debris/Rebar_MedNorm03c.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedThin01a.mdl", "models/props_debris/Rebar_MedThin01a.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedThin01b.mdl", "models/props_debris/Rebar_MedThin01b.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedThin01c.mdl", "models/props_debris/Rebar_MedThin01c.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedThin02a.mdl", "models/props_debris/Rebar_MedThin02a.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedThin02b.mdl", "models/props_debris/Rebar_MedThin02b.mdl" ) -- Not original
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedThin02c.mdl", "models/props_debris/Rebar_MedThin02c.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedThin03a.mdl", "models/props_debris/Rebar_MedThin03a.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedThin03b.mdl", "models/props_debris/Rebar_MedThin03b.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarMedThin03c.mdl", "models/props_debris/Rebar_MedThin03c.mdl" )
+	ReplaceModel( pChunk, "models/Building_details/W_RebarLargeThick01a.mdl", "models/props_debris/Rebar_LargeThick01a.mdl" )
+--	ReplaceModel( pChunk, "models/Building_details/W_Antenna01.mdl", "models/props_borealis/antenna001.mdl" ) -- Not original
+	ReplaceModel( pChunk, "models/Building_details/W_ValveWheel01.mdl", "models/props_borealis/valvewheel002b.mdl" ) -- Not original
+
+	ReplaceModel( pChunk, "models/c17_props/W_LoudSpeaker01.mdl", "models/props_wasteland/speakercluster01a.mdl" ) -- Not original
+
+	ReplaceModel( pChunk, "models/Electronics/W_Intercom.mdl", "models/props_borealis/intercom01.mdl" )
+	ReplaceModel( pChunk, "models/Electronics/W_Speaker01.mdl", "models/props_c17/trainspeaker01.mdl" )
+	
+	ReplaceModel( pChunk, "models/Furniture/W_Chair.mdl", "models/props_c17/chair02a.mdl" )
+	ReplaceModel( pChunk, "models/Furniture/W_Clock.mdl", "models/props_c17/clock01.mdl" )
+	ReplaceModel( pChunk, "models/Furniture/W_GarbCan.mdl", "models/props_c17/garbagecan01.mdl" )
+	ReplaceModel( pChunk, "models/Furniture/W_Mailbox.mdl", "models/props_c17/mailbox01.mdl" ) --Not original
+	ReplaceModel( pChunk, "models/Furniture/W_TrashCan.mdl", "models/props_c17/trashcan01a.mdl" )
+	
+	ReplaceModel( pChunk, "models/Lighting/W_CageLightOn01.mdl", "models/props_c17/light_cagelight01_on.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_CageLightOff01.mdl", "models/props_c17/light_cagelight01_off.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_CageLightOn02.mdl", "models/props_c17/light_cagelight02_on.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_CageLightOff02.mdl", "models/props_c17/light_cagelight02_off.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_DeckLightOn01.mdl", "models/props_c17/light_decklight01_on.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_DeckLightOff01.mdl", "models/props_c17/light_decklight01_off.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_DomeLightOn01.mdl", "models/props_c17/light_domelight01_on.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_DomeLightOff01.mdl", "models/props_c17/light_domelight01_off.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_DomeLightOn02.mdl", "models/props_c17/light_domelight01_on.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_DomeLightOff02.mdl", "models/props_c17/light_domelight02_off.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_FluorescentOn01.mdl", "models/props_c17/light_fluorescent01_on.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_FluorescentOff01.mdl", "models/props_c17/light_fluorescent01_off.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_GlobeLightOn01.mdl", "models/props_c17/light_globelight01_on.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_GlobeLightOff01.mdl", "models/props_c17/light_globelight01_off.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_IndustrialBell01On.mdl", "models/props_c17/light_industrialbell01_on.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_IndustrialBell01Off.mdl", "models/props_c17/light_industrialbell01_off.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_IndustrialBell02On.mdl", "models/props_c17/light_industrialbell02_on.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_IndustrialBell02Off.mdl", "models/props_c17/light_industrialbell02_off.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_LightBareOn.mdl", "models/props_c17/light_lightbare01_on.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_LightBareOff.mdl", "models/props_c17/light_lightbare01_off.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_LightBare.mdl", "models/props_c17/light_lightbare01_on.mdl" )
+	ReplaceModel( pChunk, "models/lighting/W_LightBare.mdl", "models/props_c17/light_lightbare01_on.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_LightCage.mdl", "models/props_c17/light_lightcage01_on.mdl" )
+	ReplaceModel( pChunk, "models/lighting/W_LightCage.mdl", "models/props_c17/light_lightcage01_on.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_LightShade.mdl", "models/props_c17/light_lightshade01_on.mdl" )
+	ReplaceModel( pChunk, "models/lighting/W_LightShade.mdl", "models/props_c17/light_lightshade01_on.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_LightShade2On.mdl", "models/props_wasteland/W_LightShade2On.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_LightShade2Off.mdl", "models/props_wasteland/W_LightShade2Off.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_LightShade3On.mdl", "models/props_c17/light_cagelight02_on.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_LightShade3Off.mdl", "models/props_c17/light_cagelight02_off.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_StreetLightOn01.mdl", "models/props_c17/light_streetlight02_on.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_StreetLightOff01.mdl", "models/props_c17/light_streetlight01_off.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_StreetLightOn02.mdl", "models/props_c17/light_streetlight02_on.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_StreetLightOff02.mdl", "models/props_c17/light_streetlight02_off.mdl" )
+	ReplaceModel( pChunk, "models/Lighting/W_StreetLampOn01.mdl", "models/props_c17/light_industrialbell01_on.mdl" ) -- Not original
+	ReplaceModel( pChunk, "models/Lighting/W_StreetLampOff01.mdl", "models/props_c17/light_industrialbell01_off.mdl" ) -- Not original
+	ReplaceModel( pChunk, "models/Lighting/W_StreetLampOn02.mdl", "models/props_c17/light_industrialbell02_on.mdl" ) -- Not original
+	ReplaceModel( pChunk, "models/Lighting/W_StreetLampOff02.mdl", "models/props_c17/light_industrialbell02_off.mdl" )	-- Not original
+	ReplaceModel( pChunk, "models/Lighting/W_TrafficLight.mdl", "models/props_c17/Traffic_Light001a.mdl" )
+	
+	ReplaceModel( pChunk, "models/Pipes/W_Pipe_1b_curve_halfsize.mdl", "models/props_c17/pipe02_90degree01.mdl" ) -- Not original
+	ReplaceModel( pChunk, "models/Pipes/W_Pipe_1c_curve_quartersize.mdl", "models/props_c17/pipe01_90degree01.mdl" ) -- Not original
+	ReplaceModel( pChunk, "models/Pipes/W_Pipe_2a_45curve.mdl", "models/props_c17/pipe03_45degree01.mdl" ) -- Not original
+	ReplaceModel( pChunk, "models/Pipes/W_Pipe_2b_45curve_halfsize.mdl", "models/props_c17/pipe02_45degree01.mdl" ) -- Not original
+	ReplaceModel( pChunk, "models/Pipes/W_Pipe_2c_45curve_quartersize.mdl", "models/props_c17/pipe01_45degree01.mdl" ) -- Not original
+	ReplaceModel( pChunk, "models/Pipes/W_Pipe_4a_Yjoint.mdl", "models/props_c17/pipe03_yjoint01.mdl" ) -- Not original
+	ReplaceModel( pChunk, "models/Pipes/W_Pipe_4b_Yjoint_halfsize.mdl", "models/props_c17/pipe02_yjoint01.mdl" ) -- Not original
+	ReplaceModel( pChunk, "models/Pipes/W_PipeJoint.mdl", "models/props_c17/pipe01_tjoint01.mdl" ) -- Not original
+	ReplaceModel( pChunk, "models/pipes/W_Valve.mdl", "models/props_borealis/valvewheel002.mdl" )
+	
+	ReplaceModel( pChunk, "models/props_c17/apc_engine01.mdl", "models/props_c17/TrapPropeller_Engine.mdl" )
+	ReplaceModel( pChunk, "models/props_c17/streetlight01a_on.mdl", "models/props_c17/light01a_on.mdl" )
+	ReplaceModel( pChunk, "models/props_c17/utilitymount001a.mdl", "models/props_c17/utilitypolemount01a.mdl" )
+
+    ReplaceModel( pChunk, "models/Sentry01/Sentry01Gun.mdl", "models/Sentry_Guns/Sentry01Gun.mdl" )
+	ReplaceModel( pChunk, "models/Sentry01/Sentry01Post.mdl", "models/Sentry_Guns/Sentry01Post.mdl" )
+	ReplaceModel( pChunk, "models/Sentry01/Sentry01Base.mdl", "models/Sentry_Guns/Sentry01Base.mdl" )
+	
+	ReplaceModel( pChunk, "models/Ship/W_MapTube.mdl", "models/props_borealis/maptube01.mdl" )
+	ReplaceModel( pChunk, "models/Ship/W_LifeCan.mdl", "models/props_borealis/lifecan01.mdl" )
+	ReplaceModel( pChunk, "models/Ship/W_LifeRing.mdl", "models/props_borealis/lifering01.mdl" )
+	ReplaceModel( pChunk, "models/Ship/W_Windlass.mdl", "models/props_borealis/windlass01.mdl" )
+
+	-- legoj15
+	ReplaceModel( pChunk, "models/Pipes/W_Pipe_1a_curve.mdl", "models/props_c17/pipe03_90degree01.mdl" ) -- Close probably
+--	ReplaceModel( pChunk, "models/props_c17/handrail01a_level03.mdl", "models/props_c17/handrail01a_level03.mdl" ) -- Couldn't find replacement
+--	ReplaceModel( pChunk, "models/C17_citizen_minimal.mdl", "models/Humans/Male_Cheaple.mdl" ) This is probably 200% wrong
 end
 
 function UpdateSky(pChunk)
@@ -262,244 +325,160 @@ function UpdateSky(pChunk)
 	ReplaceSky( pChunk, "sky_urb01", "sky_c17_02" )
 end
 
-function UpdateTextures(pChunk)
+function UpdateTextures(pChunk) --Credits for the list: Bun, CrazzyBubba and Витой
 
 	--Brick
---	ReplaceTexture( pChunk, "BRICK/BRICKFLOOR003A", "BRICK/BRICKFLOOR002A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL001G", "BRICK/BRICKWALL001A" )	
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL001H", "BRICK/BRICKWALL001A" )	
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL001l", "BRICK/BRICKWALL001A" )	
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL001M", "BRICK/BRICKWALL001A" )	
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL002B", "BRICK/BRICKWALL002A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL002C", "BRICK/BRICKWALL002A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL002D", "BRICK/BRICKWALL002A" )	
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL004D", "BRICK/BRICKWALL004A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL005B", "BRICK/BRICKWALL005A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL005D", "BRICK/BRICKWALL005A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL005E", "BRICK/BRICKWALL005A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL005F", "BRICK/BRICKWALL005A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL005H", "BRICK/BRICKWALL005A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL007D", "BRICK/BRICKWALL007A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL007E", "BRICK/BRICKWALL007A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL007F", "BRICK/BRICKWALL007A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL008E", "BRICK/BRICKWALL008A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL008F", "BRICK/BRICKWALL008A" )	
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL011D", "BRICK/BRICKWALL011A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL011E", "BRICK/BRICKWALL011A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL011F", "BRICK/BRICKWALL011A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL011G", "BRICK/BRICKWALL011A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL011H", "BRICK/BRICKWALL011A" )	
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL011I", "BRICK/BRICKWALL011A" )	
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL012F", "BRICK/BRICKWALL012A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL020C", "BRICK/BRICKWALL020A" )	
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL022B", "BRICK/BRICKWALL022A" )	
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL022C", "BRICK/BRICKWALL022A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL024C", "BRICK/BRICKWALL024A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL025E", "BRICK/BRICKWALL025A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL025F", "BRICK/BRICKWALL025B" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL025G", "BRICK/BRICKWALL025A" )	
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL025H", "BRICK/BRICKWALL025A" )	
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL030B", "BRICK/BRICKWALL030A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL030C", "BRICK/BRICKWALL030A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL030D", "BRICK/BRICKWALL030A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL030E", "BRICK/BRICKWALL030A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL030F", "BRICK/BRICKWALL030A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL030G", "BRICK/BRICKWALL030A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL030H", "BRICK/BRICKWALL030A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL030I", "BRICK/BRICKWALL030A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL030J", "BRICK/BRICKWALL030A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL030K", "BRICK/BRICKWALL030A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL031H", "BRICK/BRICKWALL031A" )	
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL033D", "BRICK/BRICKWALL033A" )	
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL033J", "BRICK/BRICKWALL033A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL033K", "BRICK/BRICKWALL033A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL035B", "BRICK/BRICKWALL035A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL035C", "BRICK/BRICKWALL035A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL037E", "BRICK/BRICKWALL037A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL039B", "BRICK/BRICKWALL039A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL039C", "BRICK/BRICKWALL039A" )	
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL039D", "BRICK/BRICKWALL039A" )	
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL039E", "BRICK/BRICKWALL039A" )	
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL039F", "BRICK/BRICKWALL039A" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL040H", "BRICK/BRICKWALL040G" )
-	ReplaceTexture( pChunk, "BRICK/BRICKWALL044B", "BRICK/BRICKWALL044A" )
---	ReplaceTexture( pChunk, "BRICK/BRICKWALL050C", "BRICK/BRICKWALL053A" ) -- i don't know
-	
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL001D", "BRICK/BRICKWALL001A_OLD" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL001C", "BRICK/BRICKWALL001C_OLD" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL001D", "SHADERTEST/SPHERICALENVMAPBLENDMASKEDBASETIMESLIGHTMAP" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL001G", "BRICK/BRICKWALL001G_OLD" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL002A", "STONE/STONEWALL036A" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL002B", "STONE/STONEWALL036B" )
+	--ReplaceTexture( pChunk, "BRICK/BRICKWALL002C", "STONE/STONEWALL036C" ) --Does not exist
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL002D", "STONE/STONEWALL036D" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL007A", "STONE/STONEWALL037A" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL007B", "STONE/STONEWALL037B" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL007C", "STONE/STONEWALL037C" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL007D", "STONE/STONEWALL037D" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL007E", "STONE/STONEWALL037E" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL007F", "STONE/STONEWALL037F" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL007G", "STONE/STONEWALL037G" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL010A", "STONE/STONEWALL038A" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL010B", "STONE/STONEWALL038B" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL010C", "STONE/STONEWALL038C" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL010D", "STONE/STONEWALL038D" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL010E", "STONE/STONEWALL038E" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL010F", "STONE/STONEWALL038F" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL011A", "BRICK/BRICKWALL011A_OLD" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL011B", "BRICK/BRICKWALL011B_OLD" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL011C", "BRICK/BRICKWALL011C_OLD" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL011D", "STONE/STONEWALL039D" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL011E", "STONE/STONEWALL039E" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL011F", "STONE/STONEWALL039F" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL011G", "STONE/STONEWALL039G" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL011H", "STONE/STONEWALL039H" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL011I", "STONE/STONEWALL039I" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL012B", "BRICK/BRICKWALL012B_OLD" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL012C", "BRICK/BRICKWALL012C_OLD" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL013A", "STONE/STONEWALL034A" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL013B", "STONE/STONEWALL034B" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL013C", "STONE/STONEWALL034A" ) --Not original
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL014A", "STONE/STONEWALL035A" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL014B", "STONE/STONEWALL035B" )
+	ReplaceTexture( pChunk, "BRICK/BRICKWALL020A", "STONE/STONEWALL018A" ) --Possibly not original
+		
 	--BUILDINGS_SM
-	ReplaceTexture( pChunk, "BUILDINGS_SM/BRICKWALL006A_SM", "BRICK/BRICKWALL006A" )
-	ReplaceTexture( pChunk, "BUILDINGS_SM/BRICKWALL011E_SM", "BRICK/BRICKWALL011A" )
-	ReplaceTexture( pChunk, "BUILDINGS_SM/BRICKWALL012C_SM", "BRICK/BRICKWALL011C" )
-	ReplaceTexture( pChunk, "BUILDINGS_SM/METALWALL006A_SM", "METAL/METALWALL006A" )
-	ReplaceTexture( pChunk, "BUILDINGS_SM/METALWALL020A_SM", "METAL/METALWALL020A" )
-	ReplaceTexture( pChunk, "BUILDINGS_SM/METALTRUSS008A_SM", "METAL/metaltruss008a" )
 	
+	--Composite
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW001A", "GLASS/GLASSWINDOW021A" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW001B", "GLASS/GLASSWINDOW021B" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW001C", "GLASS/GLASSWINDOW021C" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW001D", "GLASS/GLASSWINDOW021D" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW001E", "GLASS/GLASSWINDOW021E" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW001F", "GLASS/GLASSWINDOW021F" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW001G", "GLASS/GLASSWINDOW021G" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW003A", "GLASS/GLASSWINDOW023A" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW003B", "GLASS/GLASSWINDOW023B" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW004A", "GLASS/GLASSWINDOW024A" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW004B", "GLASS/GLASSWINDOW024B" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW005A", "GLASS/GLASSWINDOW025A" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW005B", "GLASS/GLASSWINDOW025B" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW005C", "GLASS/GLASSWINDOW025C" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW005D", "GLASS/GLASSWINDOW025D" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW005E", "GLASS/GLASSWINDOW025E" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW006A", "GLASS/GLASSWINDOW026A" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW006B", "GLASS/GLASSWINDOW026B" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW006C", "GLASS/GLASSWINDOW026C" )
+	ReplaceTexture( pChunk, "COMPOSITE/BUILDINGWINDOW006D", "GLASS/GLASSWINDOW026D" )
+		
 	--Concrete
-	ReplaceTexture( pChunk, "CONCRETE/CONCRETEFLOOR001B", "DECALS/DECAL_CRATER001A" )
-	ReplaceTexture( pChunk, "CONCRETE/CONCRETEFLOOR003D", "CONCRETE/CONCRETEFLOOR003A" )
-	ReplaceTexture( pChunk, "CONCRETE/CONCRETEFLOOR004B", "CONCRETE/CONCRETEFLOOR004A" )
-	ReplaceTexture( pChunk, "CONCRETE/CONCRETEFLOOR021B", "CONCRETE/CONCRETEFLOOR021A" )
-	ReplaceTexture( pChunk, "CONCRETE/CONCRETEFLOOR021D", "CONCRETE/CONCRETEFLOOR021A" )
-	ReplaceTexture( pChunk, "CONCRETE/CONCRETEFLOOR024C", "CONCRETE/CONCRETEFLOOR024A" )
-	ReplaceTexture( pChunk, "CONCRETE/CONCRETEFLOOR024D", "CONCRETE/CONCRETEFLOOR024A" )
-	ReplaceTexture( pChunk, "CONCRETE/CONCRETEFLOOR026B", "CONCRETE/CONCRETEFLOOR026A" )
-	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL003C", "CONCRETE/CONCRETEWALL003A" )
---	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL007C", "CONCRETE/CONCRETEWALL003A" ) --found in retail
-	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL012F", "CONCRETE/CONCRETEWALL012B" )
-	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL015F", "CONCRETE/CONCRETEWALL015A" )
---	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL030C", "CONCRETE/CONCRETEWALL003A" ) --found in retail
---	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL036B", "CONCRETE/CONCRETEWALL003A" ) --found in retail
-	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL049A", "CONCRETE/CONCRETEWALL049B" )
-	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL060B", "CONCRETE/CONCRETEWALL060A" )
+	ReplaceTexture( pChunk, "CONCRETE/CONCRETEFLOOR003A", "CONCRETE/CONCRETEFLOOR004A" )
+	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL012B", "SHADERTEST/BASETIMESLIGHTMAPTIMESDETAIL" )
+	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL012C", "CONCRETE/CONCRETEWALL012C_OLD" )
+	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL016C", "CONCRETE/CONCRETEWALL016C_OLD" )
+	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL017B", "CONCRETE/CONCRETEWALL017B_OLD" )
+	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL017C", "CONCRETE/CONCRETEWALL017C_OLD" )
+	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL020A", "CONCRETE/CONCRETEWALL020A_OLD" )
+	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL022A", "CONCRETE/CONCRETEWALL022A_OLD" )
+	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL026B", "CONCRETE/CONCRETEWALL026B_OLD" )
+	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL026C", "CONCRETE/CONCRETEWALL026C_OLD" )
+	ReplaceTexture( pChunk, "CONCRETE/CONCRETEWALL060C", "CONCRETE/CONCRETEWALL060C_OLD" )
 	
 	--Dev
-	ReplaceTexture( pChunk, "DEV/DEV_WATER", "DEV/DEV_WATER2" )
-	ReplaceTexture( pChunk, "DEV/DEV_WATERBLACK01", "DEV/DEV_WATER2" )
-	ReplaceTexture( pChunk, "DEV/NETHER01_WATER", "DEV/DEV_WATER2" )
 	
 	--Glass
-	ReplaceTexture( pChunk, "GLASS/GLASSPIPE001B", "PROPS/PLASTICPIPE002A" )
-	ReplaceTexture( pChunk, "GLASS/GLASSPIPE001D", "PROPS/PLASTICPIPE002A" )
-	ReplaceTexture( pChunk, "GLASS/GLASSPIPE001E", "METAL/METALPIPE001A" )
-	ReplaceTexture( pChunk, "GLASS/GLASSPIPE001F", "PROPS/PLASTICPIPE002A" )
-	ReplaceTexture( pChunk, "GLASS/GLASSSKYBRIDGE003A", "GLASS/GLASSSKYBRIDGE001A" )
-	ReplaceTexture( pChunk, "GLASS/GLASSWINDOW007C", "GLASS/GLASSWINDOW007A" )	
-	ReplaceTexture( pChunk, "GLASS/GLASSWINDOW019B", "GLASS/GLASSWINDOW019A" )	
-	ReplaceTexture( pChunk, "GLASS/GLASSWINDOW033B", "GLASS/GLASSWINDOW033A" )
-	ReplaceTexture( pChunk, "GLASS/GLASSWINDOW033C", "GLASS/GLASSWINDOW033A" )
-	ReplaceTexture( pChunk, "GLASS/GLASSWINDOW038A", "GLASS/GLASSWINDOW035A" )
-	ReplaceTexture( pChunk, "GLASS/GLASSWINDOW039A", "GLASS/GLASSWINDOW035A" )
-	ReplaceTexture( pChunk, "GLASS/GLASSWINDOW045B", "GLASS/GLASSWINDOW045A" )
-	ReplaceTexture( pChunk, "GLASS/GLASSWINDOW049A", "GLASS/GLASSWINDOW048A" )
-	ReplaceTexture( pChunk, "GLASS/GLASSWINDOW063A", "GLASS/GLASSWINDOW066F" )
-	ReplaceTexture( pChunk, "GLASS/GLASSWINDOW066B", "GLASS/GLASSWINDOW066F" )
-	ReplaceTexture( pChunk, "GLASS/GLASSWINDOW071A", "GLASS/GLASSWINDOW071B" )
+	ReplaceTexture( pChunk, "GLASS/GLASSWINDOW020A", "SHADERTEST/LIGHTMAPPEDBASEALPHAMASKEDENVMAPPEDTEXTURE" )
+	ReplaceTexture( pChunk, "GLASS/GLASSWINDOW038A", "GLASS/GLASSWINDOW001A" ) --Not original
+	ReplaceTexture( pChunk, "GLASS/GLASSWINDOW064A", "GLASS/GLASSWINDOW070A" ) 
+	ReplaceTexture( pChunk, "GLASS/GLASSSKYBRIDGE003A", "BUILDING_TEMPLATE/BUILDING_SKYBRIDGE_TEMPLATE001A" ) --Not original
 	
 	--Lights
---	ReplaceTexture( pChunk, "LIGHTS/FLUORESCENTWARM001A", "LIGHTS/FLUORESCENTWARM001A" ) --Found in retail
-	ReplaceTexture( pChunk, "LIGHTS/HALOGENCOOL001A", "LIGHTS/HIDCOOL001B" )
---	ReplaceTexture( pChunk, "LIGHTS/HIDCOOL001A, "LIGHTS/HIDCOOL001A" ) --Found in retail
---	ReplaceTexture( pChunk, "LIGHTS/HIDWARM001A, "LIGHTS/HIDWARM001A" ) --Found in retail
---	ReplaceTexture( pChunk, "LIGHTS/INCANDESCENTCOOL001A, "LIGHTS/INCANDESCENTCOOL001A" ) --Found in retail
---	ReplaceTexture( pChunk, "LIGHTS/INCANDESCENTWARM001A, "LIGHTS/INCANDESCENTWARM001A" ) --Found in retail
 	
 	--Metal
-	ReplaceTexture( pChunk, "METAL/COMBINE_METAL01", "METAL/METALCOMBINE001" )
-	ReplaceTexture( pChunk, "METAL/COMBINE_METAL02", "METAL/METALCOMBINE002" )	
-	ReplaceTexture( pChunk, "METAL/COMBINE_METAL02B", "METAL/METALCOMBINE002" )
-	ReplaceTexture( pChunk, "METAL/COMBINE_METAL02C", "METAL/METALCOMBINE002" )
+	ReplaceTexture( pChunk, "METAL/METALDOOR029A", "METAL/METALDOOR029A_OLD" )
 	ReplaceTexture( pChunk, "METAL/FLOOR002A", "METAL/METALFLOOR002A" )
-	ReplaceTexture( pChunk, "METAL/METALCEILING001A", "METAL/METALCEILING005A" )
-	ReplaceTexture( pChunk, "METAL/METALCEILING003A", "METAL/METALCEILING005A" )
-	ReplaceTexture( pChunk, "METAL/METALCEILING006A", "METAL/METALCEILING005A" )
-	ReplaceTexture( pChunk, "METAL/METALDOOR039B", "METAL/METALDOOR039A" )
-	ReplaceTexture( pChunk, "METAL/METALDOOR044C", "METAL/METALDOOR044A" )
-	ReplaceTexture( pChunk, "METAL/METALDOOR044D", "METAL/METALDOOR044A" )
-	ReplaceTexture( pChunk, "METAL/METALGRATE001B", "METAL/METALGRATE001A" )
-	ReplaceTexture( pChunk, "METAL/METALHULL001B", "METAL/METALHULL002A" )	
-	ReplaceTexture( pChunk, "METAL/METALHULL002D", "METAL/METALHULL002A")
-	ReplaceTexture( pChunk, "METAL/METALHULL005B", "METAL/METALHULL005A")
-	ReplaceTexture( pChunk, "METAL/METALHULL006A", "METAL/METALHULL006C")
-	ReplaceTexture( pChunk, "METAL/METALHULL007E", "METAL/METALHULL007A")
-	ReplaceTexture( pChunk, "METAL/METALPIPE007C", "METAL/METALPIPE007A" )
-	ReplaceTexture( pChunk, "METAL/METALLADDER001B", "METAL/METALLADDER001A" )
-	ReplaceTexture( pChunk, "METAL/METALPIPEENDCAP002A", "METAL/METALPIPEENDCAP001A" )
-	ReplaceTexture( pChunk, "METAL/METALPIPEENDCAP002B", "METAL/METALPIPEENDCAP001A" )
---	ReplaceTexture( pChunk, "METAL/METALPIPENETHER", "METAL/METALPIPE001A" ) -- that is this ?
-	ReplaceTexture( pChunk, "METAL/METALROOF005B", "METAL/METALROOF005A" )
-	ReplaceTexture( pChunk, "METAL/METALSTAIR001B", "METAL/METALSTAIR001A" ) 
-	ReplaceTexture( pChunk, "METAL/METALTARCH001D", "METAL/METALARCH001A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL001E", "METAL/METALWALL001A" )
---	ReplaceTexture( pChunk, "METAL/METALWALL004B", "METAL/METALWALL004B" ) --Found in retail
-	ReplaceTexture( pChunk, "METAL/METALWALL005A", "METAL/METALWALL005B" )
-	ReplaceTexture( pChunk, "METAL/METALWALL009B", "METAL/METALWALL009A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL009C", "METAL/METALWALL009A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL012C", "METAL/METALWALL012B" )
-	ReplaceTexture( pChunk, "METAL/METALWALL039B", "METAL/METALWALL039A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL040A", "METAL/METALWALL041A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL042B", "METAL/METALWALL042A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL042C", "METAL/METALWALL042A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL042E", "METAL/METALWALL042A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL043B", "METAL/METALWALL043A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL043C", "METAL/METALWALL043A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL043D", "METAL/METALWALL043A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL044B", "METAL/METALWALL044A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL044C", "METAL/METALWALL044A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL044D", "METAL/METALWALL044A" )	
-	ReplaceTexture( pChunk, "METAL/METALWALL046B", "METAL/METALWALL046A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL047C", "METAL/METALWALL047A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL053B", "METAL/METALWALL053A" )	
-	ReplaceTexture( pChunk, "METAL/METALWALL053C", "METAL/METALWALL053A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL053D", "METAL/METALWALL053A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL054E", "METAL/METALWALL054A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL054I", "METAL/METALWALL054A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL065C", "METAL/METALWALL065B" )
-	ReplaceTexture( pChunk, "METAL/METALWALL065G", "METAL/METALWALL065B" )
-	ReplaceTexture( pChunk, "METAL/METALWALL065H", "METAL/METALWALL065B" )
-	ReplaceTexture( pChunk, "METAL/METALWALL065I", "METAL/METALWALL065B" )
-	ReplaceTexture( pChunk, "METAL/METALWALL065J", "METAL/METALWALL065B" )
-	ReplaceTexture( pChunk, "METAL/METALWALL071B", "METAL/METALWALL071A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL071E", "METAL/METALWALL071A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL073A", "METAL/METALWALL074A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL073B", "METAL/METALWALL074A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL075B", "METAL/METALWALL075A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL076C", "METAL/METALWALL076A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL078A", "METAL/METALWALL076A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL078B", "METAL/METALWALL076A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL078C", "METAL/METALWALL076A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL079A", "METAL/METALWALL074A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL079C", "METAL/METALWALL076A" )
-	ReplaceTexture( pChunk, "METAL/METALWALL080A", "METAL/METALWALL080B" )
---	ReplaceTexture( pChunk, "METAL/METALWALL080B", "METAL/METALWALL080B" ) --Found in retail -- it's another ???
-	ReplaceTexture( pChunk, "METAL/METALWALL080C", "METAL/METALWALL080C" )
-	ReplaceTexture( pChunk, "METAL/METALWALL081A", "METAL/METALWALL080B" )
-	ReplaceTexture( pChunk, "METAL/METALWALL081C", "METAL/METALWALL080B" )
-	ReplaceTexture( pChunk, "METAL/METALWALL090B", "METAL/METALWALL090A" )
-	ReplaceTexture( pChunk, "METAL/METALVENT008A", "METAL/METALVENT001A" )
+    ReplaceTexture( pChunk, "METAL/METALHULL006B", "METAL/METALHULL006B_OLD" )
+	ReplaceTexture( pChunk, "METAL/METALPIPE003A", "METAL/METALPIPE003A_OLD" )
+	ReplaceTexture( pChunk, "METAL/METALPIPE009A", "PROPS/METALPIPE009A" )
+	ReplaceTexture( pChunk, "METAL/METALPIPE011A", "METAL/METALPIPE011A_OLD" )
+	ReplaceTexture( pChunk, "METAL/METALRAIL001A", "METAL/METALRAIL001A_OLD" )
+	
 
 	--Nature
---	ReplaceTexture( pChunk, "NATURE/BLENDGRASSCOBBLE001A", "NATURE/BLENDGRASSCOBBLE001A" ) --Found in retail
-	ReplaceTexture( pChunk, "NATURE/DIRTJUNK", "NATURE/BLENDDIRTROCKS001A" ) -- Unknown texture
-	ReplaceTexture( pChunk, "NATURE/DIRTROCK", "NATURE/BLENDDIRTROCKS001A" )
-	ReplaceTexture( pChunk, "NATURE/QUARRYROCKDIRT001A", "NATURE/BLENDDIRTROCKS001A" )
-	ReplaceTexture( pChunk, "NATURE/ROCKWALL08A", "NATURE/ROCKWALL008A" )
-	ReplaceTexture( pChunk, "NATURE/ROCKWALL09B", "NATURE/ROCKWALL009B" )
-	ReplaceTexture( pChunk, "NATURE/ROCKWALL010A", "NATURE/ROCKWALL010A" )
-	ReplaceTexture( pChunk, "NATURE/ROCKWALL011A", "NATURE/ROCKWALL011A" )
-	ReplaceTexture( pChunk, "NATURE/ROCKWALL14A", "NATURE/ROCKWALL014A" )
-	ReplaceTexture( pChunk, "NATURE/ROCKWALL16A", "NATURE/ROCKWALL016A" )
-	ReplaceTexture( pChunk, "NATURE/SAND_ROCK_BLEND", "NATURE/BLENDSANDROCK004A" )
-	ReplaceTexture( pChunk, "NATURE/WATER_BOREALIS02", "NATURE/WATER_BOREALIS01" )
-	ReplaceTexture( pChunk, "NATURE/WATER_VERT01", "NATURE/WATER_CANALS03" )
-	ReplaceTexture( pChunk, "NATURE/WATER_WASTELAND001", "NATURE/WATER_WASTELAND002" )
 
 	--Plaster
-	ReplaceTexture( pChunk, "PLASTER/PLASTERCOLUMN001A", "STONE/STONECOLUMN001A" )
-	ReplaceTexture( pChunk, "PLASTER/PLASTERCOLUMN001B", "STONE/STONECOLUMN001B" )
-	ReplaceTexture( pChunk, "PLASTER/PLASTERCOLUMN001C", "STONE/STONECOLUMN001A" )
-	ReplaceTexture( pChunk, "PLASTER/PLASTERCORNICE001A", "PLASTER/PLASTERWALL001A" ) -- Unknown texture
-	ReplaceTexture( pChunk, "PLASTER/PLASTERCORNICE001B", "PLASTER/PLASTERWALL001A" ) -- Unknown texture
-	ReplaceTexture( pChunk, "PLASTER/PLASTERRELIEF001A", "PLASTER/PLASTERWALL001A" ) -- Unknown texture
-	ReplaceTexture( pChunk, "PLASTER/PLASTERRELIEF005A", "PLASTER/PLASTERWALL001A" ) -- Unknown texture
-	ReplaceTexture( pChunk, "PLASTER/PLASTERWALL012C", "PLASTER/PLASTERWALL012A" )
-	ReplaceTexture( pChunk, "PLASTER/PLASTERWALL016B", "PLASTER/PLASTERWALL016A" )
---	ReplaceTexture( pChunk, "PLASTER/PLASTERWALL018D", "PLASTER/PLASTERWALL018D" ) --Found in retail
-	ReplaceTexture( pChunk, "PLASTER/PLASTERWALL037D", "PLASTER/PLASTERWALL037B" )
---	ReplaceTexture( pChunk, "PLASTER/PLASTERWALL040C", "PLASTER/PLASTERWALL040C" ) --Found in retail
---	ReplaceTexture( pChunk, "PLASTER/PLASTERWALL045D", "PLASTER/PLASTERWALL045D" ) --Found in retail
-
+	ReplaceTexture( pChunk, "PLASTER/PLASTERCOLUMN001A", "PLASTER/PLASTERWALL001H" )
+	ReplaceTexture( pChunk, "PLASTER/PLASTERCOLUMN001B", "PLASTER/PLASTERWALL001I" )
+	ReplaceTexture( pChunk, "PLASTER/PLASTERCOLUMN001C", "PLASTER/PLASTERWALL001J" )
+    ReplaceTexture( pChunk, "PLASTER/PLASTERWALL002B", "PLASTER/PLASTERWALL002F" )
+	ReplaceTexture( pChunk, "PLASTER/PLASTERWALL002C", "PLASTER/PLASTERWALL002A" )
+	ReplaceTexture( pChunk, "PLASTER/PLASTERWALL003F", "PLASTER/PLASTERWALL003B" )
+	ReplaceTexture( pChunk, "PLASTER/PLASTERWALL010H", "PLASTER/PLASTERWALL010H_OLD" )
+	ReplaceTexture( pChunk, "PLASTER/PLASTERWALL010I", "PLASTER/PLASTERWALL010I_OLD" )
+	ReplaceTexture( pChunk, "PLASTER/PLASTERWALL010J", "PLASTER/PLASTERWALL010J_OLD" )
+	ReplaceTexture( pChunk, "PLASTER/PLASTERWALL012C", "METAL/METALWALL035A" ) --Speculation
+	ReplaceTexture( pChunk, "PLASTER/PLASTERWALL028E", "PLASTER/PLASTERWALL028I" )
+	ReplaceTexture( pChunk, "PLASTER/PLASTERWALL039C", "PLASTER/PLASTERWALL039A" )
+	ReplaceTexture( pChunk, "PLASTER/PLASTERWALL043C", "STONE/STONEWALL040E" )
+	ReplaceTexture( pChunk, "PLASTER/PLASTERWALL043D", "STONE/STONEWALL040D" )
+	ReplaceTexture( pChunk, "PLASTER/PLASTERWALL043E", "STONE/STONEWALL040E" )
+	
 	--Props
 	ReplaceTexture( pChunk, "PROPS/BILLBOARD002A", "PROPS/SIGNBILLBOARD002A" )
-	ReplaceTexture( pChunk, "PROPS/BILLBOARD002B", "PROPS/SIGNBILLBOARD005A" )
+	ReplaceTexture( pChunk, "PROPS/METALSIGN001A", "PROPS/METALSIGN001A_OLD" )
+	ReplaceTexture( pChunk, "PROPS/METALSIGN001D", "PROPS/METALSIGN001D_OLD" )
+	ReplaceTexture( pChunk, "PROPS/PAPERPOSTER001A", "PROPS/PAPERPOSTER001A_OLD" )
+	ReplaceTexture( pChunk, "PROPS/PAPERPOSTER002A", "PROPS/PAPERPOSTER002A_OLD" )
+	ReplaceTexture( pChunk, "PROPS/PAPERPOSTER003A", "PROPS/PAPERPOSTER003A_OLD" )
 	
 	--Stone
---	ReplaceTexture( pChunk, "STONE/DIRTROAD001A", "STONE/STONEFLOOR007A" )
-	ReplaceTexture( pChunk, "STONE/STONECORNICE001A", "STONE/STONEWALL013A" ) -- Unknown texture
-
+	ReplaceTexture( pChunk, "STONE/STONEWALL001A", "DEV/DEV_STONEWALL001A" )
+    ReplaceTexture( pChunk, "STONE/STONEWALL008B", "STONE/STONEWALL008E" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL008D", "STONE/STONEWALL008A" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL021B", "STONE/STONEWALL021C" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL021C", "STONE/STONEWALL021A" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL021D", "STONE/STONEWALL021I" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL021E", "STONE/STONEWALL021G" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL021F", "STONE/STONEWALL021K" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL021H", "STONE/STONEWALL021B" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL023A", "STONE/STONEWALL023A_OLD" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL024C", "STONE/STONEWALL024F" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL024I", "STONE/STONEWALL024A" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL029A", "PLASTER/PLASTERWALL036A" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL029B", "PLASTER/PLASTERWALL036B" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL029C", "PLASTER/PLASTERWALL036C" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL029D", "PLASTER/PLASTERWALL036D" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL029H", "PLASTER/PLASTERWALL036H" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL030B", "STONE/STONEWALL030K" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL033A", "STONE/STONEWALL033A_OLD" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL033B", "STONE/STONEWALL033B_OLD" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL033C", "STONE/STONEWALL033C_OLD" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL033F", "STONE/STONEWALL033F_OLD" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL033G", "STONE/STONEWALL033G_OLD" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL033H", "STONE/STONEWALL033H_OLD" )
+	ReplaceTexture( pChunk, "STONE/STONEWALL033I", "STONE/STONEWALL033I_OLD" )
+	
 	--Tile
---	ReplaceTexture( pChunk, "TILE/TILEFLOOR016A", "TILE/TILEFLOOR016A" ); --Found in retail
-	ReplaceTexture( pChunk, "TILE/TILEWALL007B", "TILE/TILEWALL007A" );
-	ReplaceTexture( pChunk, "TILE/TILEWALL007C", "TILE/TILEWALL007A" );
-	ReplaceTexture( pChunk, "TILE/TILEWALL011A", "TILE/TILEWALL006A" );	
 
 end
 
@@ -517,7 +496,6 @@ function UpdateEntitiesName(pChunk)
 	RenameEntity( pChunk, "npc_turret", "npc_turret_ceiling" )
 	RenameEntity( pChunk, "env_glow", "env_lightglow" )
 --	RenameEntity( pChunk, "func_train", "func_tracktrain" ) -- ???
-
 	RenameEntity( pChunk, "light_glspot", "light_spot" )
 end
 
