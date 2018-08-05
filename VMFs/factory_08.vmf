@@ -1,17 +1,17 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "7748"
-	"mapversion" "428"
+	"editorbuild" "7884"
+	"mapversion" "429"
 	"prefab" "0"
 }
 visgroups
 {
 	visgroup
 	{
-		"name" "860 objects"
-		"visgroupid" "3"
-		"color" "187 66 145"
+		"name" "1 object"
+		"visgroupid" "2"
+		"color" "210 8 186"
 		"visible" "1"
 	}
 	visgroup
@@ -23,9 +23,9 @@ visgroups
 	}
 	visgroup
 	{
-		"name" "1 object"
-		"visgroupid" "2"
-		"color" "210 8 186"
+		"name" "860 objects"
+		"visgroupid" "3"
+		"color" "187 66 145"
 		"visible" "1"
 	}
 }
@@ -39,7 +39,7 @@ viewsettings
 world
 {
 	"id" "0"
-	"mapversion" "428"
+	"mapversion" "429"
 	"classname" "worldspawn"
 	"skyname" "sky_wasteland02"
 	"sounds" "1"
@@ -46206,7 +46206,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "1168.35 -470.058 361"
 	editor
 	{
@@ -46221,7 +46221,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "1012.35 -469.058 361"
 	editor
 	{
@@ -46236,7 +46236,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "856.349 -469.058 361"
 	editor
 	{
@@ -46251,7 +46251,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "1094.35 -470.058 60"
 	editor
 	{
@@ -46266,7 +46266,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "1091.35 -374.058 60"
 	editor
 	{
@@ -46281,7 +46281,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "807.301 -194.058 -183"
 	editor
 	{
@@ -46296,7 +46296,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "963.301 -193.058 -183"
 	editor
 	{
@@ -46311,7 +46311,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "1119.3 -193.058 -183"
 	editor
 	{
@@ -46326,7 +46326,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "293.301 -194.058 -183"
 	editor
 	{
@@ -46341,7 +46341,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "585.349 -453.058 -324"
 	editor
 	{
@@ -46356,7 +46356,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "429.349 -452.058 -324"
 	editor
 	{
@@ -46371,7 +46371,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "273.349 -452.058 -324"
 	editor
 	{
@@ -46386,7 +46386,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "508.349 -357.058 -324"
 	editor
 	{
@@ -46401,7 +46401,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "352.349 -356.058 -324"
 	editor
 	{
@@ -46416,7 +46416,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "1014.35 -366.058 -348"
 	editor
 	{
@@ -46431,7 +46431,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "858.349 -365.058 -348"
 	editor
 	{
@@ -46446,7 +46446,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "1014.35 -461.058 -348"
 	editor
 	{
@@ -46461,7 +46461,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "858.349 -460.058 -348"
 	editor
 	{
@@ -46476,7 +46476,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "11.3494 -468.058 361"
 	editor
 	{
@@ -46492,7 +46492,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-144.651 -467.058 361"
 	editor
 	{
@@ -46508,7 +46508,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-300.651 -467.058 361"
 	editor
 	{
@@ -46524,7 +46524,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "14.349 -467.058 63"
 	editor
 	{
@@ -46540,7 +46540,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-415.699 -195.058 -183"
 	editor
 	{
@@ -46556,7 +46556,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-259.699 -194.058 -183"
 	editor
 	{
@@ -46572,7 +46572,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-103.699 -194.058 -183"
 	editor
 	{
@@ -46588,7 +46588,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-566.7 -291.058 -183"
 	editor
 	{
@@ -46604,7 +46604,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-489.699 -195.058 -183"
 	editor
 	{
@@ -46620,7 +46620,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "587.301 -317.058 220"
 	editor
 	{
@@ -46635,7 +46635,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "696.349 -454.058 220"
 	editor
 	{
@@ -46650,7 +46650,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "397.301 -324.058 -4"
 	editor
 	{
@@ -46665,7 +46665,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "506.349 -461.058 -4"
 	editor
 	{
@@ -46680,7 +46680,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1276.65 -326.058 186"
 	editor
 	{
@@ -46695,7 +46695,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1432.65 -325.058 186"
 	editor
 	{
@@ -46710,7 +46710,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1048.65 -326.058 186"
 	editor
 	{
@@ -46725,7 +46725,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1125.65 -422.058 186"
 	editor
 	{
@@ -46740,7 +46740,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1228.7 -282.058 10"
 	editor
 	{
@@ -46755,7 +46755,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1384.7 -283.058 10"
 	editor
 	{
@@ -46770,7 +46770,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1006.7 -195.058 -183"
 	editor
 	{
@@ -46785,7 +46785,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-850.699 -194.058 -183"
 	editor
 	{
@@ -46800,7 +46800,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1234.7 -195.058 -183"
 	editor
 	{
@@ -46815,7 +46815,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1157.7 -291.058 -183"
 	editor
 	{
@@ -46830,7 +46830,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1199.65 -326.058 -374"
 	editor
 	{
@@ -46845,7 +46845,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1355.65 -325.058 -374"
 	editor
 	{
@@ -46860,7 +46860,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1511.65 -325.058 -374"
 	editor
 	{
@@ -46875,7 +46875,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1048.65 -422.058 -374"
 	editor
 	{
@@ -46890,7 +46890,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1125.65 -326.058 -374"
 	editor
 	{
@@ -46905,7 +46905,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-543.699 -308.058 220"
 	editor
 	{
@@ -46921,7 +46921,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-434.651 -445.058 220"
 	editor
 	{
@@ -46954,7 +46954,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-511.651 -445.058 220"
 	editor
 	{
@@ -46970,7 +46970,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-464.699 -307.058 220"
 	editor
 	{
@@ -46986,7 +46986,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1125.65 -422.058 -374"
 	editor
 	{
@@ -47001,7 +47001,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1048.65 -326.058 -374"
 	editor
 	{
@@ -47016,7 +47016,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1432.65 -325.058 -374"
 	editor
 	{
@@ -47031,7 +47031,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1276.65 -326.058 -374"
 	editor
 	{
@@ -47046,7 +47046,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1157.7 -195.058 -183"
 	editor
 	{
@@ -47061,7 +47061,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1234.7 -291.058 -183"
 	editor
 	{
@@ -47076,7 +47076,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-771.699 -194.058 -183"
 	editor
 	{
@@ -47092,7 +47092,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-927.699 -194.058 -183"
 	editor
 	{
@@ -47107,7 +47107,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1083.7 -195.058 -183"
 	editor
 	{
@@ -47122,7 +47122,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1307.7 -283.058 10"
 	editor
 	{
@@ -47137,7 +47137,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1125.65 -326.058 186"
 	editor
 	{
@@ -47152,7 +47152,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1048.65 -422.058 186"
 	editor
 	{
@@ -47167,7 +47167,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "1012.35 -469.058 220"
 	editor
 	{
@@ -47182,7 +47182,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "1060.3 -336.058 -141"
 	editor
 	{
@@ -47197,7 +47197,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "142.301 -194.058 -183"
 	editor
 	{
@@ -47213,7 +47213,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "142.301 -290.058 -183"
 	editor
 	{
@@ -47229,7 +47229,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-768.699 -435.058 -183"
 	editor
 	{
@@ -47245,7 +47245,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1908.65 -207.058 186"
 	editor
 	{
@@ -47260,7 +47260,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1985.65 -303.058 186"
 	editor
 	{
@@ -47275,7 +47275,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2136.65 -303.058 186"
 	editor
 	{
@@ -47290,7 +47290,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2292.65 -304.058 186"
 	editor
 	{
@@ -47305,7 +47305,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2088.7 -347.058 10"
 	editor
 	{
@@ -47320,7 +47320,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2244.7 -346.058 10"
 	editor
 	{
@@ -47335,7 +47335,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2094.7 -338.058 -183"
 	editor
 	{
@@ -47350,7 +47350,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2017.7 -434.058 -183"
 	editor
 	{
@@ -47365,7 +47365,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1866.7 -434.058 -183"
 	editor
 	{
@@ -47380,7 +47380,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1710.7 -435.058 -183"
 	editor
 	{
@@ -47395,7 +47395,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1908.65 -303.058 -374"
 	editor
 	{
@@ -47410,7 +47410,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1985.65 -207.058 -374"
 	editor
 	{
@@ -47425,7 +47425,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2059.65 -303.058 -374"
 	editor
 	{
@@ -47440,7 +47440,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2215.65 -304.058 -374"
 	editor
 	{
@@ -47455,7 +47455,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2371.65 -304.058 -374"
 	editor
 	{
@@ -47470,7 +47470,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-3248.65 -278.058 434"
 	editor
 	{
@@ -47485,7 +47485,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-3248.65 -279.058 -56"
 	editor
 	{
@@ -47500,7 +47500,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-3800.65 -431.058 127"
 	editor
 	{
@@ -47515,7 +47515,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2684.65 -447.058 434"
 	editor
 	{
@@ -47530,7 +47530,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2292.65 -304.058 -374"
 	editor
 	{
@@ -47545,7 +47545,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2136.65 -303.058 -374"
 	editor
 	{
@@ -47560,7 +47560,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1985.65 -303.058 -374"
 	editor
 	{
@@ -47575,7 +47575,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1908.65 -207.058 -374"
 	editor
 	{
@@ -47590,7 +47590,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1631.7 -435.058 -183"
 	editor
 	{
@@ -47605,7 +47605,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1787.7 -435.058 -183"
 	editor
 	{
@@ -47620,7 +47620,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1943.7 -434.058 -183"
 	editor
 	{
@@ -47635,7 +47635,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2017.7 -338.058 -183"
 	editor
 	{
@@ -47650,7 +47650,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2094.7 -434.058 -183"
 	editor
 	{
@@ -47665,7 +47665,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2167.7 -346.058 10"
 	editor
 	{
@@ -47680,7 +47680,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2371.65 -304.058 186"
 	editor
 	{
@@ -47695,7 +47695,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2215.65 -304.058 186"
 	editor
 	{
@@ -47710,7 +47710,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-2059.65 -303.058 186"
 	editor
 	{
@@ -47725,7 +47725,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1985.65 -207.058 186"
 	editor
 	{
@@ -47740,7 +47740,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1908.65 -303.058 186"
 	editor
 	{
@@ -47755,7 +47755,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-259.699 -290.058 -183"
 	editor
 	{
@@ -47771,7 +47771,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "65.3005 -290.058 -183"
 	editor
 	{
@@ -47787,7 +47787,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "65.3005 -194.058 -183"
 	editor
 	{
@@ -47803,7 +47803,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "696.349 -459.058 -72"
 	editor
 	{
@@ -47818,7 +47818,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "1091.35 -470.058 220"
 	editor
 	{
@@ -47833,7 +47833,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1511.65 -325.058 186"
 	editor
 	{
@@ -47848,7 +47848,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1355.65 -325.058 186"
 	editor
 	{
@@ -47863,7 +47863,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-1199.65 -326.058 186"
 	editor
 	{
@@ -47878,7 +47878,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "429.349 -461.058 -4"
 	editor
 	{
@@ -47893,7 +47893,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "476.301 -323.058 -4"
 	editor
 	{
@@ -47908,7 +47908,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "619.349 -454.058 220"
 	editor
 	{
@@ -47923,7 +47923,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "666.301 -316.058 220"
 	editor
 	{
@@ -47938,7 +47938,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-489.699 -291.058 -183"
 	editor
 	{
@@ -47954,7 +47954,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-566.7 -195.058 -183"
 	editor
 	{
@@ -47970,7 +47970,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-182.699 -194.058 -183"
 	editor
 	{
@@ -47986,7 +47986,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-338.699 -195.058 -183"
 	editor
 	{
@@ -48002,7 +48002,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "91.349 -467.058 63"
 	editor
 	{
@@ -48018,7 +48018,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-221.651 -467.058 361"
 	editor
 	{
@@ -48034,7 +48034,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "-65.6506 -468.058 361"
 	editor
 	{
@@ -48050,7 +48050,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "779.349 -460.058 -348"
 	editor
 	{
@@ -48065,7 +48065,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "935.349 -460.058 -348"
 	editor
 	{
@@ -48080,7 +48080,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "1091.35 -461.058 -348"
 	editor
 	{
@@ -48095,7 +48095,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "935.349 -365.058 -348"
 	editor
 	{
@@ -48110,7 +48110,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "1091.35 -366.058 -348"
 	editor
 	{
@@ -48125,7 +48125,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "429.349 -356.058 -324"
 	editor
 	{
@@ -48140,7 +48140,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "585.349 -357.058 -324"
 	editor
 	{
@@ -48155,7 +48155,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "352.349 -452.058 -324"
 	editor
 	{
@@ -48170,7 +48170,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "508.349 -453.058 -324"
 	editor
 	{
@@ -48185,7 +48185,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "372.301 -193.058 -183"
 	editor
 	{
@@ -48200,7 +48200,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "216.301 -194.058 -183"
 	editor
 	{
@@ -48216,7 +48216,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "1040.3 -193.058 -183"
 	editor
 	{
@@ -48231,7 +48231,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "884.301 -194.058 -183"
 	editor
 	{
@@ -48246,7 +48246,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "1012.35 -374.058 60"
 	editor
 	{
@@ -48261,7 +48261,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "1015.35 -469.058 60"
 	editor
 	{
@@ -48276,7 +48276,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "1171.35 -470.058 60"
 	editor
 	{
@@ -48291,7 +48291,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "935.349 -469.058 361"
 	editor
 	{
@@ -48306,7 +48306,7 @@ entity
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"spawnflags" "4"
-	"model" "models/Humans/Male_Cheaple.mdl"
+	"model" "models/c17_citizen_minimal.mdl"
 	"origin" "1091.35 -470.058 361"
 	editor
 	{
@@ -49601,8 +49601,8 @@ entity
 	"origin" "-160 -159.5 116"
 	connections
 	{
-		"OnFullyOpen" "factory_second_floor_catwalk_button_wav_1,PlaySound,,1,-1"
 		"OnFullyOpen" "factory_second_floor_catwalk_door_1,Open,,3,-1"
+		"OnFullyOpen" "factory_second_floor_catwalk_button_wav_1,PlaySound,,1,-1"
 	}
 	solid
 	{
@@ -54866,9 +54866,9 @@ entity
 	"spawnflags" "0"
 	connections
 	{
-		"OnTrigger" "factory_second_floor_catwalk_button_wav_1,PlaySound,,0.2,-1"
-		"OnTrigger" "factory_second_floor_catwalk_2,Open,,3,-1"
 		"OnTrigger" "factory_second_floor_catwalk_1,Open,,2,-1"
+		"OnTrigger" "factory_second_floor_catwalk_2,Open,,3,-1"
+		"OnTrigger" "factory_second_floor_catwalk_button_wav_1,PlaySound,,0.2,-1"
 	}
 	"origin" "-135 -222 116"
 	editor
@@ -54930,8 +54930,8 @@ cameras
 	}
 	camera
 	{
-		"position" "[796.844 -268.149 457.365]"
-		"look" "[875.055 -261.146 475.635]"
+		"position" "[714.261 -355.526 278.443]"
+		"look" "[634.85 -346.503 267.847]"
 	}
 }
 cordon
